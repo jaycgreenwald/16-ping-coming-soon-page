@@ -71,6 +71,13 @@ html {
 	color: var(--clr-blue-300);
 }
 
+.error {
+	font-size: 10px;
+	color: var(--clr-red-400);
+	font-style: italic;
+	display: none;
+}
+
 /* block */
 .btn-rounded {
 	background-color:hsl(0, 0%, 59%);
@@ -139,12 +146,20 @@ li {
 	display: inline-flex;
 }
 
-.social__icon {
+.social__circle {
 	border: 1px solid var(--clr-blue-200);
 	border-radius: 50%;
+	margin: 0 7px 0 7px;
 	width: 30px;
 	height: 30px;
-	margin: 0 7px 0 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social__icon {
+	width: 15px;
+	height: 15px;
 }
 
 .copyright {

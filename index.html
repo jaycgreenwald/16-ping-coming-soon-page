@@ -21,7 +21,8 @@
     <form action="" class="form-email">
       <label for="email"></label>
       <input type="email" class="email-input-rounded" name="email-field" id="email" placeholder="Your email address..." aria-label="Your email address...">
-      <button class="btn-rounded btn-rounded--blue">Notify Me</button>
+      <p class="error">Please provide a valid email address</p>
+      <button class="btn-rounded btn-rounded--blue" id="btn-rounded">Notify Me</button>
     </form>
     <img class="hero" src="images/illustration-dashboard.png" alt="">
 
@@ -30,7 +31,9 @@
   <footer class="foot">
     <div class="social">
       <ul class="social__links">
-        <li class="social__icon">A</li><li class="social__icon">A</li><li class="social__icon">A</li>
+        <li class="social__circle"><img class="social__icon" src="images/facebook.svg" alt=""></li>
+        <li class="social__circle"><img class="social__icon" src="images/twitter.svg" alt=""></li>
+        <li class="social__circle"><img class="social__icon" src="images/instagram.svg" alt=""></li>
       </ul>
     </div>
     <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
