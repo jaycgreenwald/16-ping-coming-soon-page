@@ -6,12 +6,16 @@
 	--clr-red-400: hsl(354, 100%, 66%);
 	--clr-gray-300: hsl(0, 0%, 59%);
 	--clr-white: hsl(0, 0%, 100%);
-
+	
 	--fw-300: 300;
 	--fw-400: 400;
 	--fw-500: 500;
 	--fw-600: 600;
 	--fw-700: 700;
+	
+	--fa-border-color: hsl(223, 87%, 63%);
+	--fa-border-radius: 50%;
+	--fa-border-padding: 14px 10.5px 14px 10.5px;
 }
 
 html {
@@ -26,113 +30,100 @@ html {
 }
 
 .page {
-	min-height: 100vh;
-	margin: 0;
-	padding: 40px 0 40px 0;
-	font-family: 'Libre Franklin', sans-serif;
-	text-align: center;
 	display: flex;
 	flex-direction: column;
+	font-family: 'Libre Franklin', sans-serif;
+	margin: 0;
+	min-height: 100vh;
+	padding: 2.5rem 0 2.5rem 0;
+	text-align: center;
 }
 
 .logo {
-	width: 54px;
-	margin: 45px 0 0 0;
+	margin: 2.8125rem 0 0 0;
+	width: 3.375rem;
+}
+
+.page__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .page__title {
-	font-size: 22px;
-	font-weight: var(--fw-400);
 	color: var(--clr-gray-300);
-	margin: 40px 0 0 0;
+	font-size: 1.375rem;
+	font-weight: var(--fw-400);
+	margin: 2.5rem 0 0 0;
 }
 
 .page__text {
-	font-size: 12px;
 	color: var(--clr-blue-800);
-	margin: 17px 0 0 0;
+	font-size: 0.75rem;
+	margin: 1.0625rem 0 0 0;
 }
 
 .form-email {
-	margin: 34px 0 0 0;
+	margin: 2.125rem 0 0 0;
 }
 
-/* block */
 .email-input-rounded {
-	width: 282px;
 	border: 1px solid var(--clr-blue-300);
-	padding: 10px 10px 10px 30px;
-	border-radius: 20px;
+	border-radius: 1.25rem;
+	padding: 0.625rem 0.625rem 0.625rem 1.875rem;
+	width: 17.625rem;
 }
 
 .email-input-rounded::placeholder {
-	font-family: 'Libre Franklin', sans-serif;
-	font-size: 12px;
 	color: var(--clr-blue-300);
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 0.75rem;
 }
 
 .error {
-	font-size: 10px;
 	color: var(--clr-red-400);
-	font-style: italic;
 	display: none;
+	font-size: 0.625rem;
+	font-style: italic;
 }
 
-/* block */
 .btn-rounded {
 	background-color:hsl(0, 0%, 59%);
 	border: none;
 	border-radius: 9999px;
+	box-shadow: 0rem 0.375rem 0.625rem -0.1875rem rgba(73, 73, 73, 0.40);
 	color: #333333;
+	cursor: pointer;
 	display: block;
 	font-size: 1rem;
 	padding: 1rem 2rem 1rem 2rem;
-	box-shadow: 0px 6px 10px -3px rgba(73, 73, 73, 0.40);
 }
 
-/* modifier */
 .btn-rounded--blue {
 	background-color: var(--clr-blue-400);
 	color: var(--clr-white);
-	font-size: 12px;
+	font-size: 0.75rem;
 	font-weight: var(--fw-600);
-	padding: 12px 2rem 12px 2rem;
-	min-width: 282px;
-	margin: 10px 0 0 0;
+	margin: 0.625rem 0 0 0;
+	padding: 0.75rem 2rem 0.75rem 2rem;
 	transition: all 200ms;
+	min-width: 17.625rem;
 }
 
 .btn-rounded--blue:hover {
 	background-color: var(--clr-blue-300);
 }
 
-
 .hero {
-	width: 320px;
-	margin: 70px 0 0 0;
+	margin: 4.375rem 0 0 0;
+	width: 20rem;
 }
 
-
-/* composition */
-.flx-col-hcenter {
+.page-footer {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-}
-
-.flx-row-hcenter {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-
-
-.foot {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
 	flex-grow: 1;
+	justify-content: flex-end;
 }
 
 li {
@@ -140,37 +131,57 @@ li {
 }
 
 .social__links {
+	display: inline-flex;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	display: inline-flex;
-}
-
-.social__circle {
-	border: 1px solid var(--clr-blue-200);
-	border-radius: 50%;
-	margin: 0 7px 0 7px;
-	width: 30px;
-	height: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .social__icon {
-	width: 15px;
-	height: 15px;
+	align-items: center;
+	background-color: var(--clr-white);
+	border: 1px solid var(--clr-blue-400);
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	height: 25px;
+	justify-content: center;
+	width: 25px;
+}
+
+.social__icon:hover {
+	background-color: var(--clr-blue-400);
+}
+
+.social__circle {
+	margin: 0 6px 0 6px;
+}
+
+i {
+	color: var(--clr-blue-400);
+	transition: all 200ms;
+}
+
+i:hover {
+	color: white;
+	background-color: var(--clr-blue-400);
+} 
+
+.fa-twitter {
+	padding: 14px 7.5px;
+}
+
+.fa-instagram {
+	padding: 14px 8.5px;
 }
 
 .copyright {
-	font-size: 10px;
 	color: var(--clr-gray-300);
+	font-size: 10px;
 	margin: 25px 0 0 0;
 }
 
 .txt-bold {
-	font-weight: var(--fw-700);
 	color: var(--clr-blue-800);
+	font-weight: var(--fw-700);
 }
-
-

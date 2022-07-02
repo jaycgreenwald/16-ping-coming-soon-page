@@ -86,6 +86,9 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Continued development
 
+What does aria-hidden = "true" mean?
+min-width, max-width, width?
+
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 **Note: Delete this note and the content within this section and replace with your own plans for continued development.**
