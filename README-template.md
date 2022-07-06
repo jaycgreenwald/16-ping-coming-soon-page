@@ -33,13 +33,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Ping](https://jaycgreenwald.github.io/16-ping-coming-soon-page/)
-- Live Site URL: [Ping Coming Soon Page](https://jaycgreenwald.github.io/16-ping-coming-soon-page/)
+- Solution URL: (https://jaycgreenwald.github.io/16-ping-coming-soon-page/)
+- Live Site URL: (https://jaycgreenwald.github.io/16-ping-coming-soon-page/)
+- GitHub Repo: (https://github.com/jaycgreenwald/16-ping-coming-soon-page)
 
 ## My process
 
@@ -56,40 +57,29 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+I still have much to learn... but, I did:
+  - use regex for the first time to validate email inputs
+  - display error messages using JavaScript
+  - try not to be "pixel perfect"
 
 
 ### Continued development
 
-What does aria-hidden = "true" mean?
-min-width, max-width, width? - static versus flexible?
-javascript - is there a difference between accessing an element directly and creating a variable then referencing the variable
+- Keep learning JavaScript
+- Learn more about how to use aria attributes
+- Keep learning about BEM
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+
+### Questions
+
+- Did I use the aria attributes correctly? I need to learn a lot more about this.
+- I'm still fuzzy on the times to employ min-width, max-width, or width? It works, but could it better? More flexible?
+- JavaScript - is there a difference between accessing an element directly and creating a variable then referencing the variable. What about getElementById versus querySelector?
 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- There were many, but I lost track of them.
 
 
 ## Author
@@ -97,8 +87,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Website - [jaycgreenwald at GitHub](https://www.your-site.com)
 - Frontend Mentor - [@jaycgreenwald](https://www.frontendmentor.io/profile/jaycgreenwald)
 - Twitter - [@jaycgreenwald](https://www.twitter.com/jaycgreenwald)
-
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.

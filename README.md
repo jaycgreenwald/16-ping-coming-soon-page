@@ -74,7 +74,7 @@ I still have much to learn... but, I did:
 
 - Did I use the aria attributes correctly? I need to learn a lot more about this.
 - I'm still fuzzy on the times to employ min-width, max-width, or width? It works, but could it better? More flexible?
-- JavaScript - is there a difference between accessing an element directly and creating a variable then referencing the variable. What about getElementById versus querySelector?
+- JavaScript - is there a difference between accessing an element directly and creating a variable then referencing the variable? What about getElementById versus querySelector?
 
 
 ### Useful resources

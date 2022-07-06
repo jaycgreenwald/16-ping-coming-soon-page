@@ -1,11 +1,13 @@
 // stop the form from submitting
-document.getElementById("btn-rounded").addEventListener("click", function(event) {
+const submitButton = document.querySelector(".js-btn-rounded");
+
+submitButton.addEventListener("click", function(event) {
     event.preventDefault()
 });
 
 const emailRegex = new RegExp(/^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/, "gm");
 
-document.getElementById("btn-rounded").addEventListener("click", validateEmail);
+submitButton.addEventListener("click", validateEmail);
 
 function validateEmail() {
     const inputEmail = document.getElementById("email").value;
@@ -13,7 +15,6 @@ function validateEmail() {
     
     if (isValidEmail == false) {
         const inputField = document.getElementById("email");
-        inputField.value = "example@email/com";
         inputField.style.border = "1px solid var(--clr-red-400)";
         if (inputEmail == '') {
             document.querySelector('.error-format').style.display = 'none';
